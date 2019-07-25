@@ -3,9 +3,9 @@
 
 import React from 'react';
 import { connect } from 'react-redux'
-// import logo from '../BridgeNYC'  this file needs to be fixed
+
 class Home extends React.Component {
-//  { this.props.currentUser }
+
   render() {
 
     const pic = "https://www.yalefox.com/wp-content/uploads/2018/09/nyc-logo.png"

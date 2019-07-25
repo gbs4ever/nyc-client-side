@@ -42,9 +42,9 @@ class LoginForm extends Component {
 
     return (
       <div>
-        <fieldset className="search">
-          <form className="boxed" onSubmit={this.onSubmit}>
-          <p> <strong>Please login:</strong></p>
+       
+          <form className="search" onSubmit={this.onSubmit}>
+          <p> <u><strong>Please login:</strong></u></p>
  
           <label > Email:  </label>
           <input onChange={this.onChange} type="text" name="email" value={this.state.email} /> <br />
@@ -53,7 +53,6 @@ class LoginForm extends Component {
           <input type='submit' value= "Log In" />
         </form>
       
-          </fieldset>
       
       </div>
     )

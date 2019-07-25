@@ -15,11 +15,11 @@ function Navbar({ currentUser}) {
           
        
           <li>
-          {currentUser ? <Link to="/buildings">Search Buildings</Link> : <a target="_blank" rel="noopener noreferrer" href="https://www1.nyc.gov/nyc-resources/service/2195/pay-a-parking-ticket">NYC Tickets</a>}
+          {currentUser ? <Link to="/buildings">Search Buildings</Link> : <Link to="/signup">Sign Up</Link> }
          
           </li>
          <li>
-          {currentUser ? <Link to="/search">Search Plates </Link> : <Link to="/signup">Sign Up</Link>}
+          {currentUser ? <Link to="/search">Search Plates </Link> : <a target="_blank" rel="noopener noreferrer" href="https://www1.nyc.gov/nyc-resources/service/2195/pay-a-parking-ticket">NYC Tickets</a>}
         
         </li> 
           <li>
