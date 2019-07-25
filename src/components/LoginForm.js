@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { updateLoginForm } from '../actions/updateloginform'
 import { login } from '../actions/currentUser.js'
 import { withRouter } from 'react-router-dom';
-
+//using redux and react state
 class LoginForm extends Component {
   state = {
     email: "",
