@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #3e4146;
+  background-color: #393b3f;
    min-height: 100vh;
    /* background-image: url("https://media.timeout.com/images/101749629/750/422/image.jpg"); */
 }
@@ -13,7 +13,7 @@
 }
 
 .App-header {
-  background-color: #3e4146;
+  background-color: #393b3f;
   border-color: inherit;
  
   display: flex;
