@@ -31,7 +31,7 @@ class App extends React.Component {
       
       <Navbar />
      
-        <Route path="/" component={Home} />
+        {this.props.currentUser ? <Route path="/" component={Home} /> : <Redirect to="/login" />} 
         <Route exact path="/buildings" component={BuildingInput} />
         <Route exact path="/buildings/index" component={BuildingsContainer} />
         <Route exact path="/signup" render={() => (!this.props.currentUser ? <SignUp/> : <Redirect to="/search" />)} />
