@@ -1,6 +1,6 @@
 //add action for violation response
 /// state = []    each violation object    should be a json object 
-
+//this is a new change hopefully the new build is passed to github
 export const violationresponse = tickets=> {
 
   return {
@@ -26,7 +26,7 @@ export const plateupdate= plates => {
 export const search = data => {
   return dispatch => {
 debugger 
-    return fetch("http://localhost:3001/violations", {
+    return fetch("https://nyc-violation.herokuapp.com/violations", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -52,7 +52,7 @@ export const getplates = () => {
 
   return dispatch => {
 
-    return fetch("http://localhost:3001/plates", {
+    return fetch("https://nyc-violation.herokuapp.com/plates", {
 
       method: "GET",
       credentials: "include",

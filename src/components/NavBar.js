@@ -15,18 +15,19 @@ function Navbar({ currentUser}) {
           
        
           <li>
-          {currentUser ? <Link to="/search">Search </Link> : <Link to="/signup">Sign Up</Link>}
+          {currentUser ? <Link to="/buildings">Search Buildings</Link> : <a target="_blank" rel="noopener noreferrer" href="https://www1.nyc.gov/nyc-resources/service/2195/pay-a-parking-ticket">NYC Tickets</a>}
+         
           </li>
          <li>
-          {currentUser ? <Link to="/plates">Past Searches</Link> : <a target="_blank" rel="noopener noreferrer" href="https://www1.nyc.gov/nyc-resources/service/2195/pay-a-parking-ticket">NYC Tickets</a>}
+          {currentUser ? <Link to="/search">Search Plates </Link> : <Link to="/signup">Sign Up</Link>}
         
         </li> 
           <li>
             <a target="_blank" rel="noopener noreferrer" href="https://secure24.ipayment.com/NYCPayments/nycbookmark_1.htm">Pay Your Tickets</a>
           </li>
-          <li>
+          {/* <li>
         {!currentUser ? <Link to="/">Beta Testing</Link> : <Link to="/buildings">Beta Testing</Link>}
-        </li>
+        </li> */}
         <li>
 
           {!currentUser ? <Link to="/login">Login</Link> : /*<Link to="/logout">Log Out</Link> */ <Logout />}

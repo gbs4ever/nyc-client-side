@@ -16,7 +16,7 @@ export const buildingsresponse = tickets => {
 export const searchbuildings = data => {
   return dispatch => {
  
-    return fetch("http://localhost:3001/buildings", {
+    return fetch("https://nyc-violation.herokuapp.com/buildings", {
       method: "POST",
       credentials: "include",
       headers: {

@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux'
-// import logo from '../BridgeNYC'
+// import logo from '../BridgeNYC'  this file needs to be fixed
 class Home extends React.Component {
 //  { this.props.currentUser }
   render() {
@@ -12,7 +12,7 @@ class Home extends React.Component {
     return(
  
         <div className="App-header">
-          Welcome to NYC Violations 
+          Welcome to NYC Violations lookup 
         <img src={pic} className="App-logo" alt="logo" />
         <div>
           {/* <img src={logo} alt="Logo" /> */}
