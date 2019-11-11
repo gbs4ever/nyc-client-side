@@ -1,9 +1,18 @@
 .App {
   text-align: center;
-  background-color: #393b3f;
-   min-height: 100vh;
-   /* background-image: url("https://media.timeout.com/images/101749629/750/422/image.jpg"); */
+  
+  min-height: 100vh;
+  background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
 }
+
+
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -13,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #393b3f;
+  color: blue;
   border-color: inherit;
  
   display: flex;
@@ -21,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 .NavBar {
   /* position: fixed; */
@@ -42,10 +51,22 @@
   overflow: hidden;
   /* background-color: rgb(73, 73, 73); */
 }
+
+.boxcenter{
+  color: blue;
+ margin: auto;
+  width: 50%;
+  padding: 10px;
+  width: 32%;
+}
 .search{
-    color: #61dafb;
-    display:inline-block;
-    padding:  30px;
+  color: #61dafb;
+   
+  
+  width: 50%;
+  padding: 10px;
+ 
+
 }
 .plates{
   padding: 20px;
@@ -61,7 +82,7 @@
 
 .NavBar li a {
   display: block;
-  color: #61dafb;
+  color: blue;
   text-align: center;
   padding: 9px 9px;
   text-decoration: none;
@@ -88,7 +109,7 @@ table.center {
     margin-left:auto; 
     margin-right:auto;
     border-spacing: 3px;
-    color: #56d5f8e8;
+    color: #61dafb;
   }
 
 tbody {
@@ -100,7 +121,7 @@ td a:hover {
   background-color:#C45231
 }
 td a {
-   color: #56d5f8e8;
+   color: #61dafb;
 }
 ul {
   list-style-type: none;
@@ -120,7 +141,7 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;}
-  .error {
+  #error {
   border: 1px solid red;
 }
 .col-centered{

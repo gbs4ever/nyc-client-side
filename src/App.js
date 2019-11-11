@@ -12,7 +12,9 @@ import BuildingsContainer from './container/BuildingsContainer.js'
 import PlatesContainer from './container/PlatesContainer.js'
 import PlateInput from './components/PlateInput'
 import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 import Logout from './components/Logout'
 
 
@@ -27,10 +29,10 @@ class App extends React.Component {
     
   return (
     <Router>
-    <div className="App">
+    <div  className="App">
       
       <Navbar />
-     
+        <div id= "imagebackground">
         {this.props.currentUser ? <Route path="/" component={Home} /> : <Redirect to="/login" />} 
         <Route exact path="/buildings" component={BuildingInput} />
         <Route exact path="/buildings/index" component={BuildingsContainer} />
@@ -44,7 +46,7 @@ class App extends React.Component {
     
      
     
-         
+        </div>
          </div>
     </Router>
   

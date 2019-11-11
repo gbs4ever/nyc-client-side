@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { search} from '../actions/plate.js'
 import { withRouter} from "react-router-dom";
 import PlatesContainer from '../container/PlatesContainer.js'
+import { MDBContainer,MDBBtn } from 'mdbreact';
 function validate(number, state) {
   // true means invalid, so our conditions got reversed
   return {
@@ -58,17 +59,19 @@ class PlateInput extends Component {
    
       <div className ="col-centered">
      
-        <fieldset className= "search">
-        Please enter your information
+        <fieldset className="boxcenter">
+          <strong>Please enter your information</strong>
         <form className="boxed" onSubmit={this.onSubmit}>
-          <label >Plate #  </label>
-          <input
-            className={errors.number ? "error" : ""}
+            <p className="h4 text-center mb-4"> </p>
+            <label icon="envelope" htmlFor="defaultFormLoginEmailEx" className="blue-text">
+                      Your email:
+          </label>
+            <input className="form-control" id={errors.number ? "error" : ""}
            onChange={this.onChange} type="text" name="number" value={this.state.number} /> <br/>
-          <label >State  </label>
-          <input className={errors.state ? "error" : ""}
+            <label icon="envelope" htmlFor="defaultFormLoginEmailEx" className="blue-text">State</label>
+            <input className="form-control" id={errors.state ? "error" : ""}
           onChange={this.onChange} type="text" name="state" value={this.state.state} /> <br />
-          <button id="button center" disabled={isDisabled}>Search </button>
+            <MDBBtn  disabled={isDisabled}>Search  </MDBBtn>
         </form>
         </fieldset>
         <div className = "plates">
