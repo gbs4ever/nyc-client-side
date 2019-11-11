@@ -25,34 +25,38 @@ const PlateCard = ({ plates, search, history }) => {
   };
   return (
     <div className="plates">
-      {plates.map((tickets, index) => {
-        return (
-          <Card
-            bg="info"
-            text="white"
-            style={{ width: "16rem" }}
-            key={index + 3}
-          >
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-
-              <p className="column" key={index + 1}>
-                {tickets.number} -- {tickets.state}
-              </p>
-
-              {/* <Card.Link href="#">Card Link</Card.Link> */}
-              <button
-                className="uneven-end"
-                onClick={handleOnsubmit}
-                number={tickets.number}
-                state={tickets.state}
+      <div className="row">
+        {plates.map((tickets, index) => {
+          return (
+            <div className="col-md-3" key={index}>
+              <Card
+                bg="info"
+                text="white"
+                style={{ width: "16rem" }}
+                key={index + 3}
               >
-                Find Tickets
-              </button>
-            </Card.Body>
-          </Card>
-        );
-      })}
+                <Card.Body>
+                  <Card.Title>Search Plates</Card.Title>
+
+                  <p className="column" key={index + 1}>
+                    {tickets.number} -- {tickets.state}
+                  </p>
+
+                  {/* <Card.Link href="#">Card Link</Card.Link> */}
+                  <button
+                    className="uneven-end"
+                    onClick={handleOnsubmit}
+                    number={tickets.number}
+                    state={tickets.state}
+                  >
+                    Find Tickets
+                  </button>
+                </Card.Body>
+              </Card>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

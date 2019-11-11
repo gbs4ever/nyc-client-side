@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { search } from "../actions/plate.js";
 import { withRouter } from "react-router-dom";
 import PlatesContainer from "../container/PlatesContainer.js";
-import { MDBContainer, MDBBtn } from "mdbreact";
+import { MDBContainer } from "mdbreact";
 function validate(number, state) {
   // true means invalid, so our conditions got reversed
   return {
@@ -57,7 +57,7 @@ class PlateInput extends Component {
               <label
                 icon="envelope"
                 htmlFor="defaultFormLoginEmailEx"
-                className="blue-text"
+                className="dark-blue-text"
               >
                 Plate:
               </label>
@@ -73,7 +73,7 @@ class PlateInput extends Component {
               <label
                 icon="envelope"
                 htmlFor="defaultFormLoginEmailEx"
-                className="blue-text"
+                className="dark-blue-text"
               >
                 State
               </label>
