@@ -1,44 +1,60 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { search } from '../actions/plate.js'
+import React from "react";
+import { connect } from "react-redux";
+import { search } from "../actions/plate.js";
 import { withRouter } from "react-router-dom";
+import Card from "react-bootstrap/Card";
 
+const PlateCard = ({ plates, search, history }) => {
+  const handleOnsubmit = event => {
+    event.preventDefault();
 
-const PlateCard = ({plates,search ,history}) => {
-  const handleOnsubmit = (event) => {
+    let data = {
+      number: event.currentTarget.attributes[1].textContent,
+      state: event.currentTarget.attributes[2].textContent
+    };
 
-  event.preventDefault();
- 
-    let data = { number: event.currentTarget.attributes[1].textContent, state: event.currentTarget.attributes[2].textContent}
-    
-    search(data)
-      .then(res => {
-        if (res.error) {
-          alert(res.error)
-        } else if (res.notice) {
-          alert(res.notice)
-        } else {
-          history.push('/violations')
-        }
-      })
-    }
+    search(data).then(res => {
+      if (res.error) {
+        alert(res.error);
+      } else if (res.notice) {
+        alert(res.notice);
+      } else {
+        history.push("/violations");
+      }
+    });
+  };
   return (
-    <div className="plates" >
-     {plates.map((tickets, index) => {
-       return <fieldset key= {index+3}>
-        <legend>Past Plates</legend>
-         <p className="column" key={index+1}>{tickets.number} -- {tickets.state}</p>
-      
-         <button className="uneven-end" onClick={handleOnsubmit} number={tickets.number} state={tickets.state} >Find Tickets</button> 
-        
-       </fieldset>
-       }) }    
+    <div className="plates">
+      {plates.map((tickets, index) => {
+        return (
+          <Card
+            bg="info"
+            text="white"
+            style={{ width: "16rem" }}
+            key={index + 3}
+          >
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+
+              <p className="column" key={index + 1}>
+                {tickets.number} -- {tickets.state}
+              </p>
+
+              {/* <Card.Link href="#">Card Link</Card.Link> */}
+              <button
+                className="uneven-end"
+                onClick={handleOnsubmit}
+                number={tickets.number}
+                state={tickets.state}
+              >
+                Find Tickets
+              </button>
+            </Card.Body>
+          </Card>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-
-
-
-export default  withRouter(connect(null,{search})(PlateCard));
-
+export default withRouter(connect(null, { search })(PlateCard));
