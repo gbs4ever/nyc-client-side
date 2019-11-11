@@ -1,21 +1,12 @@
 export const buildingsresponse = tickets => {
-
   return {
     type: "ADD_BUILDINGS_VIOLATIONS",
     tickets
-  }
-
-}
-
-
-
-
-
-
+  };
+};
 
 export const searchbuildings = data => {
   return dispatch => {
- 
     return fetch("https://nyc-violation.herokuapp.com/buildings", {
       method: "POST",
       credentials: "include",
@@ -23,18 +14,15 @@ export const searchbuildings = data => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
-    }
-    ).then(r => r.json())
- 
+    })
+      .then(r => r.json())
+
       .then(d => {
-      
         // dispatch(plateupdate(data))
         if (!d.notice && !d.error) {
-
-          dispatch(buildingsresponse(d))
+          dispatch(buildingsresponse(d));
         }
-        return d
-      }
-      )
-  }
-}
+        return d;
+      });
+  };
+};

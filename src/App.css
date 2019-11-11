@@ -1,36 +1,29 @@
 .App {
   text-align: center;
-  
+
   min-height: 100vh;
   background-image: url("http://mdbootstrap.com/img/Photos/Others/images/91.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
   background-position: center center;
-
-
 }
-
-
-
-
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 6vmin;
   pointer-events: none;
-   padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .App-header {
   color: blue;
   border-color: inherit;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-
 }
 .NavBar {
   /* position: fixed; */
@@ -51,30 +44,26 @@
   overflow: hidden;
   /* background-color: rgb(73, 73, 73); */
 }
-
-.boxcenter{
+.boxcenter {
   color: blue;
- margin: auto;
+  margin: auto;
   width: 50%;
   padding: 10px;
   width: 32%;
 }
-.search{
+.search {
   color: #61dafb;
-   
-  
+
   width: 50%;
   padding: 10px;
- 
-
 }
-.plates{
+.plates {
   padding: 20px;
   color: #61dafb;
-   display: block;
-    /* margin: 35px; */
-   width: 50%;
- margin: 0 auto;
+  display: block;
+  /* margin: 35px; */
+  width: 50%;
+  margin: 0 auto;
 }
 .NavBar li {
   float: left;
@@ -88,29 +77,28 @@
   text-decoration: none;
 }
 li a:hover {
-  background-color: #C45231
+  background-color: #c45231;
 }
 
 .App-link {
   color: #61dafb;
 }
-table, td {
-  
+table,
+td {
   border: 1px solid black;
-   border-collapse: collapse;
+  border-collapse: collapse;
 }
-th, td {
+th,
+td {
   text-align: center;
   padding: 15px;
-
-   
 }
 table.center {
-    margin-left:auto; 
-    margin-right:auto;
-    border-spacing: 3px;
-    color: #61dafb;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 3px;
+  color: #61dafb;
+}
 
 tbody {
   display: table-row-group;
@@ -118,17 +106,16 @@ tbody {
   border-color: inherit;
 }
 td a:hover {
-  background-color:#C45231
+  background-color: #c45231;
 }
 td a {
-   color: #61dafb;
+  color: #61dafb;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
 
 li {
@@ -140,14 +127,14 @@ li {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;}
-  #error {
+  text-decoration: none;
+}
+#error {
   border: 1px solid red;
 }
-.col-centered{
-    float: none;
-    margin: 0 auto;
-   
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 /* #button center{
   display: flex; 
@@ -170,7 +157,7 @@ margin: 0 0 1.25rem;
 }
 .uneven-end {
   float: center;
-  width: 24%;
+  width: 28%;
   margin: auto;
   font-size: 14px;
   color: #61dafb;
@@ -181,14 +168,14 @@ margin: 0 0 1.25rem;
 }
 /* .col3 {
   /* column-count: 3; */
-  /* column-rule: 1px solid grey; */
-  /* column-fill: auto; */
-  /* text-align: center; }*/
+/* column-rule: 1px solid grey; */
+/* column-fill: auto; */
+/* text-align: center; }*/
 
 .column {
   margin: auto;
   font-size: 20px;
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
