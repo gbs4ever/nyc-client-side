@@ -25,7 +25,7 @@ export const plateupdate= plates => {
 
 export const search = data => {
   return dispatch => {
-debugger 
+
     return fetch("https://nyc-violation.herokuapp.com/violations", {
       method: "POST",
       credentials: "include",
