@@ -28,31 +28,33 @@ const PlateCard = ({ plates, search, history }) => {
       <div className="row">
         {plates.map((tickets, index) => {
           return (
-            <div className="col-md-3" key={index}>
-              <Card
-                bg="info"
-                text="white"
-                style={{ width: "16rem" }}
-                key={index + 3}
-              >
-                <Card.Body>
-                  <Card.Title>Search Plates</Card.Title>
+            <div className="col-md-3col-md-offset-2" key={index}>
+              <div className="col-md-12">
+                <Card
+                  bg="info"
+                  text="white"
+                  style={{ width: "16rem" }}
+                  key={index + 3}
+                >
+                  <Card.Body>
+                    <Card.Title>Search Plates</Card.Title>
 
-                  <p className="column" key={index + 1}>
-                    {tickets.number} -- {tickets.state}
-                  </p>
+                    <p className="column" key={index + 1}>
+                      {tickets.number} -- {tickets.state}
+                    </p>
 
-                  {/* <Card.Link href="#">Card Link</Card.Link> */}
-                  <button
-                    className="uneven-end"
-                    onClick={handleOnsubmit}
-                    number={tickets.number}
-                    state={tickets.state}
-                  >
-                    Find Tickets
-                  </button>
-                </Card.Body>
-              </Card>
+                    {/* <Card.Link href="#">Card Link</Card.Link> */}
+                    <button
+                      className="uneven-end"
+                      onClick={handleOnsubmit}
+                      number={tickets.number}
+                      state={tickets.state}
+                    >
+                      Find Tickets
+                    </button>
+                  </Card.Body>
+                </Card>
+              </div>
             </div>
           );
         })}
