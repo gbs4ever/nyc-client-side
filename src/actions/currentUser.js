@@ -63,9 +63,7 @@ export const getCurrentUser = () => {
       .then(r => r.json())
       .then(user => {
         if (user.error) {
-          setTimeout(function() {
-            console.log(user.error);
-          }, 10000);
+          console.log(user.error);
         } else {
           dispatch(setCurrentUser(user));
         }
