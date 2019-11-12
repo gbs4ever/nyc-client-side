@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { search } from "../actions/plate.js";
 import { withRouter } from "react-router-dom";
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardColumns } from "react-bootstrap";
 
 const PlateCard = ({ plates, search, history }) => {
   const handleOnsubmit = event => {
@@ -24,9 +24,9 @@ const PlateCard = ({ plates, search, history }) => {
     });
   };
   return (
-    <div className="plates">
+    <div>
       {/* <div className="row"> */}
-      <CardDeck>
+      <CardColumns>
         {plates.map((tickets, index) => {
           return (
             <Card
@@ -55,7 +55,7 @@ const PlateCard = ({ plates, search, history }) => {
             </Card>
           );
         })}
-      </CardDeck>
+      </CardColumns>
     </div>
   );
 };
