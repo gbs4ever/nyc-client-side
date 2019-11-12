@@ -1,29 +1,19 @@
 export default (state = null, action) => {
-  let duplicate
+  let duplicate;
   switch (action.type) {
     case "SET_CURRENT_USER":
-    
-      return action.user
+      return action.user;
     case "CLEAR_CURRNET_USER":
-     
-     return null
+      return null;
     case "ADD_PLATES":
-   
-      duplicate = state.plates.filter(p => p.number === action.plates.number )
+      duplicate = state.plates.filter(p => p.number === action.plates.number);
       if (duplicate.length === 0) {
-     return  {...state , plates: [...state.plates,action.plates] }
+        return { ...state, plates: [...state.plates, action.plates] };
       } else {
-        return state
+        return state;
       }
-    
 
     default:
-      return state
-
-
-
-
-
+      return state;
   }
-
-}
+};
