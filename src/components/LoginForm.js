@@ -45,11 +45,7 @@ class LoginForm extends Component {
                   <strong>Please login:</strong>
                 </u>
               </p>
-              <label
-                icon="envelope"
-                htmlFor="defaultFormLoginEmailEx"
-                className="blue-text"
-              >
+              <label icon="envelope" htmlFor="defaultFormLoginEmailEx">
                 Your email:
               </label>
               <input
@@ -61,9 +57,7 @@ class LoginForm extends Component {
                 value={this.state.email}
               />{" "}
               <br />
-              <label htmlFor="defaultFormLoginPasswordEx" className="blue-text">
-                Your password
-              </label>
+              <label htmlFor="defaultFormLoginPasswordEx">Your password</label>
               <input
                 id="defaultFormLoginPasswordEx"
                 className="form-control"
