@@ -1,9 +1,6 @@
-export const updateLoginForm = form =>{
-console.log(form ,"action hit ")
+export const updateLoginForm = form => {
   return {
-    type: "UPDATE_LOGIN_FORM" , 
+    type: "CLEAR_LOGIN_FORM",
     form
-
-  }
-
-}
+  };
+};

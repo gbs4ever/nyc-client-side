@@ -15,6 +15,7 @@ export const clearCurrentUser = () => {
   };
 };
 const base_url = "https://nyc-violation.herokuapp.com";
+
 export const logout = () => {
   return dispatch => {
     dispatch(clearCurrentUser());
