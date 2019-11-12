@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  color: blue;
+  color: darkblue;
   border-color: inherit;
 
   display: flex;
@@ -44,14 +44,14 @@
   /* background-color: rgb(73, 73, 73); */
 }
 .boxcenter {
-  color: blue;
+  color: darkblue;
   margin: auto;
   width: 50%;
   padding: 10px;
   width: 32%;
 }
 .search {
-  color: #61dafb;
+  color: darkblue;
 
   width: 50%;
   padding: 10px;
@@ -67,17 +67,17 @@
 
 .NavBar li a {
   display: block;
-  color: blue;
+  color: darkblue;
   text-align: center;
   padding: 9px 9px;
   text-decoration: none;
 }
 li a:hover {
-  background-color: #c45231;
+  background-color: lightgreen;
 }
 
 .App-link {
-  color: #61dafb;
+  color: darkblue;
 }
 table,
 td {
@@ -93,7 +93,7 @@ table.center {
   margin-left: auto;
   margin-right: auto;
   border-spacing: 3px;
-  color: #61dafb;
+  color: darkblue;
 }
 
 tbody {
@@ -105,7 +105,7 @@ td a:hover {
   background-color: #c45231;
 }
 td a {
-  color: #61dafb;
+  color: darkblue;
 }
 ul {
   list-style-type: none;
@@ -156,7 +156,7 @@ margin: 0 0 1.25rem;
   width: 28%;
   margin: auto;
   font-size: 14px;
-  color: #61dafb;
+  color: darkblue;
   background-color: #21252b;
   text-align: center;
   border-width: 1px;
