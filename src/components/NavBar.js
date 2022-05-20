@@ -35,7 +35,7 @@ function Navbar({ currentUser }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://secure24.ipayment.com/NYCPayments/nycbookmark_1.htm"
+            href="https://a836-citypay.nyc.gov"
           >
             Pay Your Tickets
           </a>
