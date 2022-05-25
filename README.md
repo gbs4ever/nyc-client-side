@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Try it out live [here](https://nyc-violation.netlify.app/login) 
 This is the front-end for [Nyc-Vioaltion](https://github.com/gbs4ever/-nyc-violation) which gives us the option to search with a license plate and state to check if you have any parking tickets or red-camera violations.The data is" live" and being fetched on the back-end from NYC Open Data API.You can even get a copy of your ticket,check it out! The app was designed with the option to add many more features and fetch additional data . The client-side is built using React.js. Have fun using it or fork this repo.
 
 
