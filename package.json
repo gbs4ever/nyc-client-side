@@ -46,7 +46,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo `[Husky] pre-commit`, && pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged"
     }
   }
 }
